@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Jaro', sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .wrapperTwo {
+            margin-top: 50px;
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(180deg, #97D9E1, #D9AFD9);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        #closeMod {
+            cursor: pointer;
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        #closeMod:hover {
+            background-color: darkred;
+        }
+        .mod {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+        .mod:hover {
+            transform: scale(1.05);
+        }
+        .name-mod {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        span {
+            font-size: 14px;
+            color: #666;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .mod button {
+            padding: 10px 20px;
+            background: linear-gradient(180deg, #97D9E1, #D9AFD9);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        button:active {
+            font-size: 14px;
+        }
+        main{margin-top: 50px;}
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .mod {
+                width: 90%;
+                margin: 15px auto;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapperTwo">
+        <header>
+            <div class="name">
+                Mods for 2b2t
+            </div>
+            <button id="closeMod">X</button>
+        </header>
+        <main>
+            <div class="mod">
+                <div class="name-mod">Baritone</div>
+                <span>Baritone is a pathfinding bot that automatically moves, mines, builds, and explores Minecraft worlds with high efficiency and accuracy.</span>
+                <button>Download</button>
+            </div>
+            <div class="mod">
+                <div class="name-mod">Thunder Hack</div>
+                <span>Thunder Hack is a powerful hacked client offering crystal PvP modules, auto totem, ESP, auto trap, and advanced combat utilities.</span>
+                <button>Download</button>
+            </div>
+            <div class="mod">
+                <div class="name-mod">Meteor Hack</div>
+                <span>Meteor Hack is a well-known utility mod with modules for PvP, movement, exploits, rendering, and combat with an active community.</span>
+                <button>Download</button>
+            </div>
+            <div class="mod">
+                <div class="name-mod">Rusher Hack</div>
+                <span>Rusher Hack is designed for 2b2t and anarchy servers, offering base finding, crystal PvP, exploits, and pathfinding capabilities.</span>
+                <button>Download</button>
+            </div>
+            <div class="mod">
+                <div class="name-mod">Journey Minimap</div>
+                <span>JourneyMap adds a real-time minimap and full map, allowing players to mark waypoints and explore with better navigation and awareness.</span>
+                <button>Download</button>
+            </div>
+            <div class="mod">
+                <div class="name-mod">BT Hack</div>
+                <span>BT Hack is a PvP-focused client that includes auto crystal, auto totem, ESP, tracers, and various player utility modules.</span>
+                <button>Download</button>
+            </div>
+            <div class="mod">
+                <div class="name-mod">Replay Mod</div>
+                <span>Replay Mod allows you to record, replay, and render your Minecraft gameplay, great for making cinematic videos or studying fights.</span>
+                <button>Download</button>
+            </div>
+            <div class="mod">
+                <div class="name-mod">Optimization</div>
+                <span>Optimization mods improve game performance by enhancing FPS, reducing lag, tweaking rendering, and removing unnecessary processes during gameplay.</span>
+                <button>Download</button>
+            </div>
+        </main>
+    </div>
+    <script>
+        document.getElementById("closeMod").addEventListener("click", () => {
+            const modsSetting = parent.document.getElementById("modsSetting");
+            if (modsSetting) modsSetting.style.display = "none";
+        });
+    </script>
+</body>
+</html>

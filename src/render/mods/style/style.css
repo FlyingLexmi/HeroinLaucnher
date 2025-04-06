@@ -1,0 +1,80 @@
+.wrapper{
+    width: 1280px;
+    -webkit-overflow-scrolling: none;
+   height: 720px;
+}
+
+header{
+    width: 1280px;
+    height: 50px;
+    display: flex;
+}
+
+.name{
+    max-width: 1280px;
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header button{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: red;
+    background:  none;
+    border: none;
+}
+
+
+main{
+    width: 1280px;
+    height: 700px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    justify-content: center;
+}
+
+
+.mod{
+    width: 1000px;
+    display: flex;
+    height: 100px;
+    margin-top: 50px;
+    background-color: aliceblue;
+}
+.name-mod{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(234, 234, 234);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mod span{
+    width: 600px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.mod button{
+    width: 200px;
+    font-size: 20px;
+    background: rgb(238, 238, 238);
+    border: none;
+    color: gray;
+
+}
+
+.wrapperTwo header{
+    margin-top: 150px;
+}
+
+.wrapperTwo{
+    z-index: 1000;
+    position: absolute;
+}

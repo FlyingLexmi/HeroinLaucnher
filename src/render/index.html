@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heroin launcher</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+
+
+
+        <header>
+            <span>
+                <font color="#97D9E1">Heroin</font><font color="#D9AFD9">Launcher</font>
+            </span>
+
+            <div class="buttons">
+                <button id="youtube">youtube</button>
+                <button id="github">github</button>
+                <button id="mods">mods</button>
+                <button id="bot">bot</button>
+
+            </div>
+        </header>
+
+
+
+
+        <main>
+
+            <div class="text">
+                <span><font>Heroin <br> Launcher</font></span>
+                <p>Heroin Launcher was created as a pet project.  
+                    This launcher was made for 2b2t.org.ru players and any other cracked servers.</p>
+            </div>
+
+
+            <div class="image">
+                <img src="assets/1649167246943.png" width="399px" >
+            </div>
+
+
+        </main>
+
+
+
+
+
+        <footer>
+            <div class="login-information">
+                <a href="createAccount/createAccount.html"><button id="createAcc">+</button></a>
+                <select name="username" id="username">
+
+                </select>
+                <select name="version" id="version">
+                    <option value="1.21.1">1.21.1</option>
+                    <option value="1.21">1.21</option>
+                    <option value="1.20.6">1.20.6</option>
+                    <option value="1.20.5">1.20.5</option>
+                    <option value="1.20.4">1.20.4</option>
+                    <option value="1.20.3">1.20.3</option>
+                    <option value="1.20.2">1.20.2</option>
+                    <option value="1.20.1">1.20.1</option>
+                    <option value="1.20">1.20</option>
+                    <option value="1.19.4">1.19.4</option>
+                    <option value="1.19.3">1.19.3</option>
+                    <option value="1.19.2">1.19.2</option>
+                    <option value="1.19.1">1.19.1</option>
+                    <option value="1.19">1.19</option>
+                    <option value="1.18.2">1.18.2</option>
+                    <option value="1.18.1">1.18.1</option>
+                    <option value="1.18">1.18</option>
+                    <option value="1.17.1">1.17.1</option>
+                    <option value="1.17">1.17</option>
+                </select>                
+            </div>
+            <div class="buttons-footer">
+                <button id="play">PLAY</button><br>
+                <button id="settings">settings</button>
+            </div>
+        </footer>
+    <div class="modsRender" style="
+        max-width: 1920px;
+        height: 99.9vh;
+        width: 100%;
+        position: absolute;
+        top:0;
+        left: 0;
+        display: none;"
+        id="modsSetting">
+        <iframe src="mods/mods.html"  class="modsIframe" style="border:none;"></iframe>
+    </div>
+    <div class="add" id="add" style="
+    max-width: 1920px;
+    height: 99.9vh;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top:0;
+    left: 0;
+    display: none;">
+        <iframe src="createAccount/createAccount.html" style="width: 100%; height: 100%; border: none;"></iframe>
+    </div>
+    </div>
+    <script src="script/index.js"></script>
+    <script>
+    fetch('../../config/data.json')
+      .then(response => response.json())
+      .then(data => {
+        const select = document.getElementById('username');
+        Object.values(data).forEach(name => {
+          const option = document.createElement('option');
+          option.value = name;
+          option.textContent = name;
+          select.appendChild(option);
+        });
+      })
+      .catch(err => console.error('Ошибка загрузки JSON:', err));
+    </script>
+
+</body>
+</html>

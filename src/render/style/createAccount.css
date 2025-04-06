@@ -1,0 +1,80 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1920px;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #f0f0f09d, #d6e4f081);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    width: 300px;
+    z-index: 999;
+    padding: 30px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#closeAdd {
+    width: 35px;
+    height: 35px;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #888;
+    transition: color 0.2s ease;
+}
+
+#closeAdd:hover {
+    color: #000;
+}
+
+input {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 50px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+input:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+#create {
+    height: 40px;
+    width: 100%;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#create:active {
+    background-color: #357ABD;
+}
